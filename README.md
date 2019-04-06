@@ -67,7 +67,7 @@ This makes it conventient to change files and not require to take the SD card ou
 * [dfplayer] - DFplayer Mini
 * [usb] - USB type B connector
 * [switch] - Mini Push Button Switch Latching DPDT
-* [resistors] - Some resistors
+* Some resistors
 
 [uno]:  https://www.arduino.cc/	
 [speaker]: https://www.amazon.com/2w-speaker/s?k=2w+speaker
