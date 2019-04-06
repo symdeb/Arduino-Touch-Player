@@ -1,20 +1,19 @@
 
 # TOUCH 
 
-This example uses two DIGITAL OUTPUT pins on the ARDUIO and two DIGITAL INPUT pins.
-Each of the DIGITAL OUTPUT pin can be connected to two DIGITAL INPUT pins.
+This example uses two DIGITAL OUTPUT pins and two DIGITAL INPUT pins on the ARDUINO 
+Each of the DIGITAL OUTPUT pins can be connected to one or two DIGITAL INPUT pins.
 
- Arduino DOUT1 -- D1 ---- R1-------TP1    TP3------- Arduino DIN 1 ---------R3 --- GND
+Arduino DOUT1 -- D1 ---- R1-------TP1    TP3------- Arduino DIN 1 ---------R3 --- GND
 
- Arduino DOUT2 ---D2 ---- R2-------TP2    TP4------- Arduino DIN 2 -------- R4 --- GND
+Arduino DOUT2 ---D2 ---- R2-------TP2    TP4------- Arduino DIN 2 -------- R4 --- GND
 
-The Diode D1 and D2 is to prevent DOUT1 ne connected to DOUT2 which could cause damage to the Arduino  output.
-R1 and R2 limit the current in case TP1 and TP2 by accident would be connected to ground inatead connected to TP3 and TP4.
+The Diode D1 and D2 is to prevent DOUT1 to be connected to DOUT2 which could cause damage to the Arduino  output.
+R1 and R2 limit the output current in case TP1 and TP2  would be connected to ground instead connected to TP3 and TP4.
 An 100 KOhm resistor is added at the inputs to assure the input is low when there is no switch connection and the input is floating.
 
-We have 4 Touch points, TP1 to P4. The TP can be connected and when connected
-an output is connected to another input. This represents 4 switches.
-The touchpoints can be connected to electrical conductors, such as metal as an an on/off switch.
+We have 4 Touch points, TP1 to P4. Each connection between the TPs represents a switch
+The switches can be anything that conducts electricity, even the human body.
 
          TP1(OUT)   A       TP3(IN)
     
@@ -23,13 +22,12 @@ The touchpoints can be connected to electrical conductors, such as metal as an a
 
          TP4(IN)   C       TP2(OUT)
 
-We make D1 high, then read DIN1 and DIN2 
-Then mke D2 high and read DIN1 and DIN2 again.
+The code sets D1 high and then read DIN1 and DIN2. The D2 is set and D1 low  and read DIN1 and DIN2 again.
 
 When TP1 is high and TP3 is high, then A must be connected, and if TP4 is high, then B is connected as well.
-When TP2 is high and TP3 is high, then D must be connected, and if TP4 is high, then C is connected as well.
+WWhen TP2 is high and TP3 is high, then D must be connected, and if TP4 is high, then C is connected as well.
 
-Using the in and output values, we cam create a binary number, and then convert it into decimal.
+The in and output values represent a binary number and the results is converted to decimal.
 
     -- OUT --     -- IN ----
     DOUT1 DOUT2   DIN1  DIN2
@@ -43,18 +41,23 @@ Using the in and output values, we cam create a binary number, and then convert 
     0     1       0     1        5          C
     0     1       1     1        7          C+D
 
-Thus we cam have 8 different combinations.
-When TP3 and TP4 are 0 then there is no connection, and no sound is played.
-This 6 different sounds can be played.
+This results in  8 different values.  However when TP3 and TP4 are 0 then there is no connection and no sound file is played.
+Thus 6 different sounds can be played.
 
-
-We calculate the value and then play a different sound file using the df player.
-We use the value to select the file to play, for example 8 = 0008.mp3
+The value is used to decide which sound to play. For example 8 = 0008.mp3
 The files must be named 0001.mp3 to 0016.mp3 and located in a subfolder on the SD card.
 
-There is a switch and a USB connector. When a conputer is connected to the USB port and the switch is set in "ON" position, then powr onthe Arduno, the dfplayer will act an an USB drive and files can be moved from the PC to the dfplayer. 
-This mmakes it conventient to change files and not need to take out the SD card.  After transfer, the swiych must be set ot OFF and the Arduno reset.
+Updating MP3 files can be done using the USB connector. 
 
+1. Set the switch is set in "ON" position
+2. Connect a computer is to the DFPlayer USB connector
+3. Connect powerto the Arduino
+4. The dfplayer will act an an USB drive and files can be moved from the PC to the dfplayer. 
+5. Disconnect the usb connectors
+6. Set the switch to  "OFF"
+7. Power on the Arduino.
+
+This makes it conventient to change files and not require to take the SD card out to update the files.
 
 ** Material List **
 
