@@ -10,7 +10,7 @@ Arduino DOUT2 ---D2 ---- R2-------TP2    TP4------- Arduino DIN 2 -------- R4 --
 
 The Diode D1 and D2 is to prevent DOUT1 to be connected to DOUT2 which could cause damage to the Arduino  output.
 R1 and R2 limit the output current in case TP1 and TP2  would be connected to ground instead connected to TP3 and TP4.
-An 100 KOhm resistor is added at the inputs to assure the input is low when there is no switch connection and the input is floating.
+R3 and R4 are 100 KOhm resistors at the inputs to assure the input is low when there is no switch connection and the input is floating.
 
 We have 4 Touch points, TP1 to P4. Each connection between the TPs represents a switch
 The switches can be anything that conducts electricity, even the human body.
