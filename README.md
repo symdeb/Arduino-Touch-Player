@@ -5,6 +5,7 @@ This example uses two DIGITAL OUTPUT pins on the ARDUIO and two DIGITAL INPUT pi
 Each of the DIGITAL OUTPUT pin can be connected to two DIGITAL INPUT pins.
 
  Arduino DOUT1 -- D1 ---- R1-------TP1    TP3------- Arduino DIN 1 ---------R3 --- GND
+
  Arduino DOUT2 ---D2 ---- R2-------TP2    TP4------- Arduino DIN 2 -------- R4 --- GND
 
 The Diode D1 and D2 is to prevent DOUT1 ne connected to DOUT2 which could cause damage to the Arduino  output.
