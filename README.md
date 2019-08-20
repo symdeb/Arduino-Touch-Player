@@ -3,7 +3,7 @@
 
 This was a small project for some students in Industrial Design class for Installation Art.
 
-This project uses the resistance of the human body to touch objects and triggers a+ different sounds per about 10 touch combinations.
+This project uses the resistance of the human body to touch objects and triggers a+ different sounds for 8 touch combinations.
 Very musical rhythmic patterns can be created and the responses of playing sounds is without any latency.
 This is also an excellent toy for kids. Just by using very simple hardware of a few resistors, diodes and an MP3 Serial port player are used. All schematics and code is included. Have fun !
 
