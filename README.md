@@ -1,6 +1,11 @@
 
 # TOUCH 
 
+This was a small project for some students in Industrial Design class for Installation Art.
+
+This project uses the resistance of the human body to touch objects and trigger siferent sounds.
+Very rhythmic patterns can be created and the reponses of playing sounds is without any latency.
+
 This example uses two DIGITAL OUTPUT pins and two DIGITAL INPUT pins on the ARDUINO 
 Each of the DIGITAL OUTPUT pins can be connected to one or two DIGITAL INPUT pins.
 
