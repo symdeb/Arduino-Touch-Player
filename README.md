@@ -82,5 +82,5 @@ This makes it conventient to change files and not require to take the SD card ou
 [dfplayer]: https://www.dfrobot.com/product-1121.html
 [switch]: https://www.e-switch.com/product-catalog/pushbutton/product-lines/tl2230-series-pushbutton-switches
 	 
-Note: Watch the video in VLC Media Player
+Note: Watch a demonstration of this video in the 3rd section of the mp4 file
  
